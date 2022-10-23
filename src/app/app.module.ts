@@ -7,7 +7,12 @@ import { SecureComponent } from './secure/secure.component';
 
 import { PublicModule } from './public/public.module';
 
+// Import HttpClientModule from @angular/common/http in AppModule
+import {HttpClientModule} from '@angular/common/http';
 
+
+//in place where you wanted to use `HttpClient`
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,7 @@ import { PublicModule } from './public/public.module';
     BrowserModule,
     AppRoutingModule,
     PublicModule,
+    HttpClientModule
     
   ],
   providers: [],
